@@ -1,0 +1,8 @@
+{% block content %}
+
+{% for booking in bookings %}
+	"payment_id" : {{ booking['id'] }}
+	"Price" : {{ booking['price'] }}
+{% endfor %}
+
+{% endblock %}

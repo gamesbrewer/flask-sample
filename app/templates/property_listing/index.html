@@ -1,0 +1,8 @@
+{% block content %}
+
+{% for booking in bookings %}
+	"NAME" : {{ booking['name'] }}
+	"Location" : {{ booking['location'] }}
+{% endfor %}
+
+{% endblock %}
